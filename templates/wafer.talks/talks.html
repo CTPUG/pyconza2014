@@ -1,0 +1,51 @@
+{% extends "wafer/base.html" %}
+{% block content %}
+<div class="content wide">
+    <div class="body">
+		<h1>{% trans 'Talks' %}</h1>
+		{% if talk_list %}
+		<table cellspacing="1" cellpadding="0">
+		    <tbody>		      
+				{% for talk in talk_list %}
+				<tr>
+					<td>
+					    {% if talk.pending %}
+					    <span class="label label-warning" title="{% trans 'Under consideration' %}">{{ talk.status }}</span>
+					    {% elif talk.reject %}
+					    <span class="label label-important" title="{% trans 'Not accepted' %}">{{ talk.status }}</span>
+					    {% endif %}
+					    <a href="{{ talk.get_absolute_url }}">{{ talk.title }}</a>
+					    by
+					    <span class="author">{{ talk.corresponding_author.get_full_name|default:talk.corresponding_author.username }}</span>
+					    </a>                               
+					</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p>No talks accepted yet.</p> 
+        {% endif %}
+					
+		{% if is_paginated %}
+		<div class="pagination">
+		    <ul>
+		        {% if page_obj.has_previous %}
+		        <li><a href="?page={{ page_obj.previous_page_number }}">&laquo;</a></li>
+		        {% else %}
+		        <li class="disabled"><a href="#">&laquo;</a></li>
+		        {% endif %}
+		        {% for page in paginator.page_range %}
+		        <li><a href="?page={{ page }}">{{ page }}</a></li>
+		        {% endfor %}
+		        {% if page_obj.has_next %}
+		        <li><a href="?page={{ page_obj.next_page_number }}">&raquo;</a></li>
+		        {% else %}
+		        <li class="disabled"><a href="#">&raquo;</a></li>
+		        {% endif %}
+		    </ul>
+		</div>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

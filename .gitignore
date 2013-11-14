@@ -34,3 +34,7 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+ve
+wafer.db
+wafer
+*.pyc

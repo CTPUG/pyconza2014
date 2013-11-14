@@ -1,0 +1,17 @@
+{% extends 'wafer/base.html' %}
+{% block content %}
+<div class="content wide">
+    <div class="body">
+        <h1>{% trans 'Activition complete' %}</h1>
+        <div class="inner">
+			<p>
+			{% url 'auth_login' as login_url %}
+			{% blocktrans %}
+			    You are registered!
+			    Please <a href="{{ login_url }}">log in</a>.
+			{% endblocktrans %}
+			</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
