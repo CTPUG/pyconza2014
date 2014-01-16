@@ -1,0 +1,40 @@
+{% extends "wafer/base.html" %}
+{% block content %}
+<div class="content wide">
+    <div class="body">
+		{% if can_edit %}
+		<div class="pull-right">
+		    <a href="{% url 'wafer_talk_edit' object.pk %}" class="btn">{% trans 'Edit' %}</a>
+		</div>
+		{% endif %}
+		<h1>{{ object.title }}</h1>
+		<div class="inner">
+			<div>
+			    {% blocktrans count counter=object.authors.count %}
+			    Speaker:
+			    {% plural %}
+			    Speakers:
+			    {% endblocktrans %}
+			    {% for author in object.authors.all %}
+			    <a href="{{ author.get_absolute_url }}">{{ author.get_full_name|default:author.username }}</a>
+			    {% endfor %}
+			</div>
+			{% if user.is_staff %}
+			<div>
+			    {% trans 'Status:' %}
+			    {% if object.pending %}
+			    <span class="label label-warning">{% trans 'Under consideration' %}</span>
+			    {% elif object.accepted %}
+			    <span class="label label-success">{% trans 'Accepted' %}</span>
+			    {% else %}
+			    <span class="label label-important">{% trans 'Not accepted' %}</span>
+			    {% endif %}
+			</div>
+			{% endif %}
+			<div class="well">
+			    {{ object.abstract_html|safe }}
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'wafer/base.html' %}
+{% block content %}
+<div class="content wide">
+    <div class="body">
+		<h1>{% trans 'Registration almost complete' %}</h1>
+		<div class="inner">
+			<p>
+			{% blocktrans %}
+			    Thank you for registering for {{ WAFER_CONFERENCE_NAME }}.
+			    We have sent you an e-mail.
+			    Please follow the instructions in it to complete your registration.
+			{% endblocktrans %}
+			</p>
+		</div>
+    </div>
+</div>
+{% endblock %}

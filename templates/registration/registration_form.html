@@ -1,0 +1,12 @@
+{% extends 'wafer/base.html' %}
+{% load crispy_forms_tags %}
+{% load wafer_crispy %}
+{% block content %}
+<div class="content wide">
+    <div class="body">
+		<h1>{% trans 'Registration' %}</h1>
+		{% wafer_form_helper 'wafer.registration.forms.RegistrationFormHelper' as form_helper %}
+		{% crispy form form_helper %}
+    </div>
+</div>
+{% endblock %}
