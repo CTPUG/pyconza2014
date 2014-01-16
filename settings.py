@@ -23,10 +23,10 @@ TEMPLATE_DIRS = (
 
 
 WAFER_MENUS += (
-    {"menu": "about", "label": _("About"),
-     "items": []},
-    {"menu": "venue", "label": _("Venue"),
-     "items": []},
+    #{"menu": "about", "label": _("About"),
+    # "items": []},
+    #{"menu": "venue", "label": _("Venue"),
+    # "items": []},
     {"menu": "sponsors", "label": _("Sponsors"),
      "items": [
          {"name": "sponsors", "label": _("Our sponsors"),
