@@ -44,11 +44,14 @@ WAFER_MENUS += (
     {"menu": "previous-pycons", "label": _("Past PyConZAs"),
      "items": [
          {"name": "pyconza2012", "label": _("PyConZA 2012"),
-          "url": "http://za.pycon.org/2012/"},
+          "url": "http://2012.za.pycon.org/"},
          {"name": "pyconza2013", "label": _("PyConZA 2013"),
-          "url": "http://za.pycon.org/2013/"},
+          "url": "http://2013.za.pycon.org/"},
      ]},
     {"name": "twitter", "label": "Twitter",
      "image": "/static/img/twitter.png",
      "url": "https://twitter.com/pyconza"},
 )
+
+
+CRISPY_TEMPLATE_PACK = 'bootstrap'
