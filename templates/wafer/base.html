@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ WAFER_CONFERENCE_NAME }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}css/wafer.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}css/pyconza2013.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon">
+    <link href="//fonts.googleapis.com/css?family=Londrina+Solid|Pacifico|Oswald|PT+Sans" rel="stylesheet" type="text/css">
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% include "wafer/nav.html" %}
+    <div id="wrap">
+        <div id="main" class="container">
+{% block content %}
+    <h1>{{ WAFER_CONFERENCE_NAME }}</h1>
+{% endblock %}
+        </div>
+        <div id="logos">
+            <a href="http://www.praekeltfoundation.org/" target="_blank"><img src="{{ STATIC_URL }}img/logo_pf.png" /></a>
+            <a href="http://bit.ly/aws-pycon" target="_blank"><img src="{{ STATIC_URL }}img/logo_amazon.png" /></a>
+            <a href="http://westmarch.sjsoft.com/" target="_blank"><img src="{{ STATIC_URL }}img/logo_stjames.png" /></a><br />
+            <a href="http://www.thoughtworks.com/" target="_blank"><img src="{{ STATIC_URL }}img/logo_thoughtworks.png" /></a>
+            <a href="http://unomena.com/" target="_blank"><img src="{{ STATIC_URL }}img/logo_unomena.png" /></a>
+            <a href="http://2go.im/" target="_blank"><img src="{{ STATIC_URL }}img/logo_2go.png" /></a><br />
+            <a href="http://www.voss-solutions.com/" target="_blank"><img src="{{ STATIC_URL }}img/logo_voss.png" /></a>
+            <a href="http://developers.google.com/" target="_blank"><img src="{{ STATIC_URL }}img/logo_google.png" /></a>
+            <a href="http://www.rsaweb.co.za/" target="_blank"><img src="{{ STATIC_URL }}img/logo_rsaweb.png" /></a><br />
+            <a href="http://www.python.org/psf/" target="_blank"><img src="{{ STATIC_URL }}img/logo_psf.png" /></a>
+        </div>
+        <div id="legal">&copy; 2013 PyCon ZA.</div>
+        <div id="credits">PyConZA brought to you by <a href="http://www.praekeltfoundation.org/" target="_blank">Praekelt Foundation</a></div>
+        <div id="logo_bottom"><img src="{{ STATIC_URL }}img/logo_bottom.png" /></div>
+    </div>
+    <div id="footer">
+        <a href="https://github.com/CTPUG/pyconza2013">Pull requests</a> welcome.
+    </div>
+    <script src="{{ STATIC_URL }}/js/jquery-1.9.1.min.js"></script>
+    <script src="{{ STATIC_URL }}/js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}/js/jquery.anythingslider.min.js"></script>
+    <script src="{{ STATIC_URL }}/js/script.js?v=1"></script>
+    {% block extra_foot %}{% endblock %}
+</body>
+</html>
