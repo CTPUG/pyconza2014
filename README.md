@@ -1,4 +1,4 @@
-# PyconZA 2013 Website
+# PyconZA 2014 Website
 
 Based on [wafer](https://github.com/CTPUG/wafer).
 
