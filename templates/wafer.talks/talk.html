@@ -18,6 +18,9 @@
 			    {% for author in object.authors.all %}
 			    <a href="{{ author.get_absolute_url }}">{{ author.get_full_name|default:author.username }}</a>
 			    {% endfor %}
+			    <p>
+			    Type: {{ object.talk_type.name|default:'Talk' }}
+			    </p>
 			</div>
 			{% if user.is_staff %}
 			<div>
