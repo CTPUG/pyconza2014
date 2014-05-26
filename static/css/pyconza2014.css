@@ -221,6 +221,7 @@ a:hover, a:focus { color: #cc6714; }
             #logos .logo_container { width: 920px; margin: 0 auto 30px; padding: 0 0 30px; background: url("../img/dots_white.png") repeat-x 0 bottom; }
         .body h1 { margin: 10px 0 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
         .wafer.list h2 { color: #cc6714; }
+        .pull-right{ margin:8px;}
 
     /* REGISTRATION TABLE */
     table { width: 100%; }
