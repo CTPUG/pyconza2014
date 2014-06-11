@@ -229,6 +229,8 @@ a:hover, a:focus { color: #cc6714; }
         table th,
         table td { padding: 8px 12px; text-align: left; border-right: 2px solid #fff; background: #dfe6ec; font-size: 16px; color: #666; }
         table td.title { background: #cc6714; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
+        /* Use a darker background for unavailable venues in the schedule */
+        table td.unavailable { background: #444444; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
         table th { background: #fed43c; color: #181f29; font-weight: normal; vertical-align: top; }
         table th span { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: bold; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
         
@@ -244,4 +246,4 @@ a:hover, a:focus { color: #cc6714; }
     
     
     
-    
+
