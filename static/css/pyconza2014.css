@@ -128,12 +128,6 @@ a:hover, a:focus { color: #cc6714; }
         .main h1 { margin: 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
         /* added styling on id to style the Sponsor h1 */
         #main h1 { margin: 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
-        .content { width: 700px; float: left; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_content_top.png') no-repeat; }
-            .content .body { width: 680px; float: left; padding: 0 10px 10px 10px; background: #fff; }
-            .content .inner { width: 632px; float: left; padding: 14px 24px 24px 24px; font-family: PT Sans, sans-serif; }
-            .content .inner h2 { margin: 30px 0 24px 0; font-family: 'Oswald', sans-serif; font-size: 22px; color: #1a1f29; text-transform: uppercase; line-height: 24px; }
-            .content .item { width: 632px; float: left; margin: 0 0 20px 0; }
-            .content .item .item_body { width: 296px; float: left; }
         .wide { width: 940px; float: left; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_wide_top.png') no-repeat; }
             .wide .body { width: 920px; float: left; padding: 0 10px 10px 10px; background: #fff; }
             .wide .inner { width: 872px; float: left; padding: 14px 24px 24px 24px; font-family: PT Sans, sans-serif; color: #666; }
