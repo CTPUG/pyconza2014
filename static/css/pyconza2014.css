@@ -142,54 +142,6 @@ a:hover, a:focus { color: #cc6714; }
     .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret { display: none; }
     .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a { color: #181f29; background-color: #fed43c; background-image: linear-gradient(to bottom, #fed43c, #fed43c); }
 
-    /* PROMO */
-    .promo { z-index: 200; position: relative; }
-        .promo img { display: block; }
-        /* set default dimensions */
-        div.anythingSlider { width: 920px!important; height: 342px!important; float: left; padding: 15px 10px 13px 10px; margin: -1px 0 0 0; background: url('../img/bg_promo.png') no-repeat; position: relative; }
-        /* colors */
-        div.anythingSlider.activeSlider .thumbNav a.cur { background: url('../img/dots.png') top no-repeat; }
-        /* anythingSlider viewport window */
-        div.anythingSlider .anythingWindow { width: 100%; height: 100%; overflow: hidden; position: relative; }
-        /* wrapper: 45px right & left padding for the arrows, 28px @ bottom for navigation */
-        div.anythingSlider { position: relative; float: right; margin: 25px 0 0; }
-        /* anythingSlider base UL */
-        ul.anythingBase { background: transparent; list-style: none; position: absolute; top: 0; left: 0; margin: 0; padding: 0; }
-        ul.anythingBase li { background: transparent; display: block; float: left; padding: 0; margin: 0; position: relative; }
-        ul.anythingBase li img { position: absolute; top: 0; left: 0; z-index: 1; }
-        ul.anythingBase li div { width: 520px; padding: 34px 0 0 380px; position: relative; z-index: 2; }
-        ul.anythingBase li div h1 { background: transparent!important; padding: 0!important; margin: 0 0 10px!important; font-family: 'Londrina Solid', cursive!important; font-size: 60px!important; font-weight: normal!important; color: #cc6714!important; text-transform: uppercase!important; line-height: 50px!important; }
-        ul.anythingBase li div h2 { margin: 0 0 20px!important; font-family: 'Oswald', sans-serif!important; font-size: 20px!important; font-weight: normal!important; color: #fff!important; text-transform: uppercase!important; line-height: 28px!important; }
-        ul.anythingBase li div .btn_promo_about { width: 174px; height: 28px; padding: 8px 0 5px 10px; display: inline-block; background: url('../img/btn_promo_about.png') no-repeat; font-family: 'Londrina Solid', cursive; font-size: 26px; font-weight: normal; color: #1a1f29; text-transform: uppercase; text-decoration: none; }
-        ul.anythingBase li div.promo_venue { width: 420px; padding: 34px 0 0 460px; position: relative; z-index: 2; }
-        /* navigation arrows */
-        div.anythingSlider .arrow { top: 38%; position: absolute; display: block; z-index: 2; }
-        div.anythingSlider .arrow a { display: block; height: 114px; margin: 0; width: 41px; text-align: center; outline: 0; }
-        div.anythingSlider .arrow a span { display: block; text-indent: -9999px; }
-        div.anythingSlider .forward { right: -30px; }
-        div.anythingSlider .back { left: -33px; }
-        div.anythingSlider .forward a { background: url('../img/arrow_right.png') no-repeat; }
-        div.anythingSlider .back a { background: url('../img/arrow_left.png') no-repeat; }
-        div.anythingSlider .forward.disabled { display: block; }
-        div.anythingSlider .back.disabled { display: block; }
-        /* Navigation Links */
-        div.anythingSlider .anythingControls { outline: 0; display: none; }
-        div.anythingSlider .thumbNav { position: absolute; bottom: 25px; right: 30px; z-index: 2000; }
-        div.anythingSlider .thumbNav li { display: inline; }
-        div.anythingSlider .thumbNav a { width: 15px; height: 15px; margin: 0 10px 0 0; text-align: center; display: inline-block; text-indent: -999px; overflow: hidden; background: url('../img/dots.png') bottom no-repeat; }
-        div.anythingSlider .thumbNav a:hover { background: url('../img/dots.png') top no-repeat; }
-        /* slider autoplay right-to-left, reverse order of nav links to look better */
-        div.anythingSlider.rtl .thumbNav a { float: right; } /* reverse order of nav links */
-        div.anythingSlider.rtl .thumbNav { float: left; }    /* move nav link group to left */
-        div.anythingSlider.rtl .anythingWindow { direction: ltr; unicode-bidi: bidi-override; }
-        /* Autoplay Start/Stop button */
-        div.anythingSlider .start-stop { display: none!important; }
-        div.anythingSlider,
-        div.anythingSlider .anythingWindow,
-        div.anythingSlider .thumbNav a,
-        div.anythingSlider .arrow a,
-        div.anythingSlider .start-stop { transition-duration: 0; -o-transition-duration: 0; -moz-transition-duration: 0; -webkit-transition-duration: 0; }
-
     /* MAIN */
     .main { width: 940px; float: left; z-index: 3; }
         .main h1 { margin: 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
