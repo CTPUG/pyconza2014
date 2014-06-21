@@ -142,10 +142,6 @@ a:hover, a:focus { color: #cc6714; }
             .wide .grid { width: 872px; float: left; }
             .wide .grid .block { width: 270px; float: left; margin: 0 31px 10px 0; }
             .wide .grid .block:nth-child(3n) { margin-right: 0; }
-            /*.wide .btn { float: left; padding: 9px 38px 9px 12px; background: #3fafd7 url('../img/arrow_blue.png') right center no-repeat; border: 0; font-family: 'Londrina Solid', cursive; font-size: 24px; color: #fff; text-transform: uppercase; text-decoration: none; }*/
-        .logos { margin: 0 auto; padding: 0 0 40px 0; display: block; text-align: center; }
-            .logos img { padding: 10px 20px; }
-            #logos .logo_container { width: 920px; margin: 0 auto 30px; padding: 0 0 30px; background: url("../img/dots_white.png") repeat-x 0 bottom; }
         .body h1 { margin: 10px 0 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
         .wafer.list h2 { color: #cc6714; }
         .pull-right{ margin:8px;}
