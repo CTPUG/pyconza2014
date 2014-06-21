@@ -1,14 +1,13 @@
 {% extends "wafer/base.html" %}
 {% block content %}
 <div class="content wide">
-    <div class="body">
+    <section>
 		{% if can_edit %}
 		<div class="pull-right">
 		    <a href="{% url 'wafer_talk_edit' object.pk %}" class="btn">{% trans 'Edit' %}</a>
 		</div>
 		{% endif %}
 		<h1>{{ object.title }}</h1>
-		<div class="inner">
 			<div>
 			    {% blocktrans count counter=object.authors.count %}
 			    Speaker:
@@ -37,7 +36,6 @@
 			<div class="well">
 			    {{ object.abstract.rendered|safe }}
 			</div>
-		</div>
-	</div>
+	</section>
 </div>
 {% endblock %}

@@ -1,11 +1,11 @@
 {% extends "wafer/base.html" %}
 {% block content %}
 <div class="content wide">
-    <div class="body">
+    <section>
 		<h1>{% trans 'Talks' %}</h1>
 		{% if talk_list %}
 		<table cellspacing="1" cellpadding="0">
-		    <tbody>		      
+		    <tbody>
 				{% for talk in talk_list %}
 				<tr>
 					<td>
@@ -17,16 +17,16 @@
 					    <a href="{{ talk.get_absolute_url }}">{{ talk.title }}</a>
 					    by
 					    <span class="author">{{ talk.corresponding_author.get_full_name|default:talk.corresponding_author.username }}</span>
-					    </a>                               
+					    </a>
 					</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
         {% else %}
-        <p>No talks accepted yet.</p> 
+        <p>No talks accepted yet.</p>
         {% endif %}
-					
+
 		{% if is_paginated %}
 		<div class="pagination">
 		    <ul>
@@ -46,6 +46,6 @@
 		    </ul>
 		</div>
 		{% endif %}
-	</div>
+	</section>
 </div>
 {% endblock %}
