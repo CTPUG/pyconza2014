@@ -31,6 +31,60 @@ body {
   color: black;
 }
 
+#main h1 {
+    margin: 0;
+    padding: 0 24px;
+    line-height: 47px;
+    background: #1a1f29;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fed43c;
+    text-transform: uppercase;
+}
+
+#main section h1 {
+    margin: 10px 0 0;
+    padding: 0 24px;
+    line-height: 47px;
+    background: #1a1f29;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 30px;
+    font-weight: normal;
+    color: #fed43c;
+    text-transform: uppercase;
+}
+
+#main section {
+    width: 920px;
+    float: left;
+    padding: 0 10px 10px 10px;
+    background: #fff;
+}
+
+#main table {
+    width: 100%;
+}
+
+#main table tr {
+    border-bottom: 2px solid #fff;
+}
+
+#main table th, table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-right: 2px solid #fff;
+    background: #dfe6ec;
+    font-size: 16px;
+    color: #666;
+}
+
+#main table td.title { background: #cc6714; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
+/* Use a darker background for unavailable venues in the schedule */
+#main table td.unavailable { background: #444444; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
+#main table th { background: #fed43c; color: #181f29; font-weight: normal; vertical-align: top; }
+#main table th span { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: bold; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
+
 #logos {
   margin: 0 auto;
   text-align: center;
@@ -98,8 +152,8 @@ ul.nav li.icon a {
   padding: 6px;
 }
 
- /* override buttons */
- .btn-primary {
+/* override buttons */
+.btn-primary {
     background-color: #cc6714;
     background-image: linear-gradient(to bottom, #cc6714, #cc6714);
     background-repeat: repeat-x;
@@ -125,44 +179,3 @@ a:hover, a:focus { color: #cc6714; }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret { display: none; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a { color: #181f29; background-color: #fed43c; background-image: linear-gradient(to bottom, #fed43c, #fed43c); }
-
-/* MAIN */
-
-.main { width: 940px; float: left; z-index: 3; }
-.main h1 { margin: 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
-
-/* added styling on id to style the Sponsor h1 */
-#main h1 { margin: 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
-
-.wide { width: 940px; float: left; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_wide_top.png') no-repeat; }
-.wide .body { width: 920px; float: left; padding: 0 10px 10px 10px; background: #fff; }
-.wide .inner { width: 872px; float: left; padding: 14px 24px 24px 24px; font-family: PT Sans, sans-serif; color: #666; }
-.wide .inner h2 { margin: 30px 0 24px 0; font-family: 'Oswald', sans-serif; font-size: 22px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
-.wide .item { width: 852px; float: left; margin: 0 0 20px 0; }
-.wide .grid { width: 872px; float: left; }
-.wide .grid .block { width: 270px; float: left; margin: 0 31px 10px 0; }
-.wide .grid .block:nth-child(3n) { margin-right: 0; }
-
-.body h1 { margin: 10px 0 0; padding: 0 24px; line-height: 47px; background: #1a1f29; font-family: 'Londrina Solid', cursive; font-size: 30px; font-weight: normal; color: #fed43c; text-transform: uppercase; }
-
-.wafer.list h2 { color: #cc6714; }
-.pull-right{ margin:8px;}
-
-/* REGISTRATION TABLE */
-
-table { width: 100%; }
-table tr { border-bottom: 2px solid #fff; }
-table th, table td { padding: 8px 12px; text-align: left; border-right: 2px solid #fff; background: #dfe6ec; font-size: 16px; color: #666; }
-table td.title { background: #cc6714; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
-/* Use a darker background for unavailable venues in the schedule */
-table td.unavailable { background: #444444; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
-table th { background: #fed43c; color: #181f29; font-weight: normal; vertical-align: top; }
-table th span { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: bold; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
-
-/* REGISTRATION PAGES */
-
-.container-fluid { padding-top: 14px; padding-right: 0; padding-left: 0; color: #666666; background: url("../img/jagged_wide_top.png") no-repeat; }
-.row-fluid { width: 920px; padding: 0 10px 10px; background: #fff; }
-.container-fluid .row-fluid h2 { margin: 0 0 10px; padding: 0 24px; color: #fed43c; font-family: 'Londrina Solid',cursive; font-size: 30px; font-weight: normal; line-height: 47px; text-transform: uppercase; background: none repeat scroll 0 0 #1A1F29; }
-.container-fluid .row-fluid .span6 p { margin: 10px 0; }
-form { margin: 0 0 20px; padding: 10px; color: #666; background: #fff; }
