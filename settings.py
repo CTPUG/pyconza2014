@@ -57,4 +57,7 @@ WAFER_MENUS += (
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
-MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': False})
+MARKITUP_FILTER = ('markdown.markdown', {
+    'safe_mode': False,
+    'extensions': ['outline'],
+})
