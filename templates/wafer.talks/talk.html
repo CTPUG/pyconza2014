@@ -9,6 +9,7 @@
 		{% endif %}
 		<h1>{{ object.title }}</h1>
 			<div>
+                <p>
 			    {% blocktrans count counter=object.authors.count %}
 			    Speaker:
 			    {% plural %}
@@ -17,12 +18,14 @@
 			    {% for author in object.authors.all %}
 			    <a href="{{ author.get_absolute_url }}">{{ author.get_full_name|default:author.username }}</a>
 			    {% endfor %}
+                </p>
 			    <p>
 			    Type: {{ object.talk_type.name|default:'Talk' }}
 			    </p>
 			</div>
 			{% if user.is_staff %}
 			<div>
+                <p>
 			    {% trans 'Status:' %}
 			    {% if object.pending %}
 			    <span class="label label-warning">{% trans 'Under consideration' %}</span>
@@ -31,6 +34,7 @@
 			    {% else %}
 			    <span class="label label-important">{% trans 'Not accepted' %}</span>
 			    {% endif %}
+                </p>
 			</div>
 			{% endif %}
 			<div class="well">
