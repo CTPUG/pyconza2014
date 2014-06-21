@@ -45,7 +45,6 @@ body {
 }
 
 #main section {
-    width: 940px;
     float: left;
     padding: 0 10px 10px 10px;
     color: black;
@@ -188,3 +187,21 @@ a:hover, a:focus { color: #cc6714; }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret { display: none; }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a { color: #181f29; background-color: #fed43c; background-image: linear-gradient(to bottom, #fed43c, #fed43c); }
+
+.container-fluid{
+    padding-top: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.pull-right {
+    margin: 0;
+}
+
+@media only screen and (max-device-width: 768px){
+    #footer {
+        position: static;
+    }
+}
