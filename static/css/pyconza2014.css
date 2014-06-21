@@ -205,4 +205,9 @@ a:hover, a:focus { color: #cc6714; }
     #footer {
         position: static;
     }
+
+    .mobile-center{
+        text-align: center;
+    }
+
 }
