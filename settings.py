@@ -1,3 +1,4 @@
+# -*- encoding: utf-8 -*-
 import os
 
 from wafer.settings import *
@@ -26,11 +27,11 @@ WAFER_MENUS += (
     {"menu": "about", "label": _("About"),
      "items": []},
     {"name": "venue", "label": _("Venue"),
-     "url": reverse_lazy("wafer_page", "venue")},
+     "url": reverse_lazy("wafer_page", args=("venue",))},
     {"menu": "sponsors", "label": _("Sponsors"),
      "items": [
          {"name": "amazon", "label": _("» Amazon ★"),
-          "url": reverse_lazy("wafer_sponsor", pk=1)},
+          "url": reverse_lazy("wafer_sponsor", args=(1,))},
          {"name": "sponsors", "label": _("Our sponsors"),
           "url": reverse_lazy("wafer_sponsors")},
          {"name": "packages", "label": _("Sponsorship packages"),
