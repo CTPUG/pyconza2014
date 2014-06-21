@@ -153,12 +153,6 @@ a:hover, a:focus { color: #cc6714; }
             .content .inner h2 { margin: 30px 0 24px 0; font-family: 'Oswald', sans-serif; font-size: 22px; color: #1a1f29; text-transform: uppercase; line-height: 24px; }
             .content .item { width: 632px; float: left; margin: 0 0 20px 0; }
             .content .item .item_body { width: 296px; float: left; }
-        .sidebar { width: 220px; float: right; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_side_top.png') no-repeat; }
-            .sidebar .body { width: 200px; float: right; padding: 0 10px 20px 10px; background: #fff; }
-            .sidebar h1 { width: 152px; float: left; display: block; margin: 0 0 15px 0; text-align: center; }
-            .sidebar .sponsor { width: 200px; margin: 15px auto; display: inline-block; text-align: center; }
-            .sidebar .inner { width: 180px; float: left; padding: 10px; font-family: PT Sans, sans-serif; }
-            .sidebar .btn { float: left; padding: 9px 38px 9px 12px; background: #3fafd7 url('../img/arrow_blue.png') right center no-repeat; border: 0; font-family: 'Londrina Solid', cursive; font-size: 24px; color: #fff; text-transform: uppercase; text-decoration: none; }
         .wide { width: 940px; float: left; padding: 14px 0 0 0; position: relative; z-index: 5; background: url('../img/jagged_wide_top.png') no-repeat; }
             .wide .body { width: 920px; float: left; padding: 0 10px 10px 10px; background: #fff; }
             .wide .inner { width: 872px; float: left; padding: 14px 24px 24px 24px; font-family: PT Sans, sans-serif; color: #666; }
