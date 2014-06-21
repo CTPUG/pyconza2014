@@ -44,12 +44,13 @@ body {
 }
 
 #main section {
-    width: 920px;
+    width: 940px;
     float: left;
     padding: 0 10px 10px 10px;
     color: black;
     background: #fff;
     margin-bottom: 1em;
+    background: url('../img/jagged_wide_top.png') no-repeat;
 }
 
 #main section h1 {
