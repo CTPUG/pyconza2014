@@ -43,6 +43,15 @@ body {
     text-transform: uppercase;
 }
 
+#main section {
+    width: 920px;
+    float: left;
+    padding: 0 10px 10px 10px;
+    color: black;
+    background: #fff;
+    margin-bottom: 1em;
+}
+
 #main section h1 {
     margin: 10px 0 0;
     padding: 0 24px;
@@ -53,14 +62,11 @@ body {
     font-weight: normal;
     color: #fed43c;
     text-transform: uppercase;
+    margin-bottom: 0.5em;
 }
 
-#main section {
-    width: 920px;
-    float: left;
-    padding: 0 10px 10px 10px;
-    color: black;
-    background: #fff;
+#main section p {
+    padding: 0.5em 24px;
 }
 
 #main table {
