@@ -1,18 +1,19 @@
 {% extends "wafer/base.html" %}
 {% block content %}
 <div class="content wide">
-    <div class="body">
+    <section>
         <h1>{% trans 'Sponsors' %}</h1>
-		<div class="inner">
-		    {% for sponsor in sponsor_list %}
-		    <div>
-		        <h2>{{ sponsor.name }}</h1>
+    </section>
+
+	{% for sponsor in sponsor_list %}
+    <section>
+        <h1>{{ sponsor.name }}</h1>
 		        {{ sponsor.description.rendered|safe }}
-		    </div>
-		    {% empty %}
-		    <p>No sponsors yet.</p>
-		    {% endfor %}
-		</div>
-    </div>
+    </section>
+    {% empty %}
+	<section>
+	    <p>No sponsors yet.</p>
+    </section>
+    {% endfor %}
 </div>
 {% endblock %}
