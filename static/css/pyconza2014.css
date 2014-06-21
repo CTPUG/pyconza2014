@@ -115,25 +115,6 @@ ul.nav li.icon a {
 
 a { color: #cc6714; }
 a:hover, a:focus { color: #cc6714; }
-
-    /* HELPERS */
-    .margin_top_20 { margin-top: 20px; }
-    .no_marg_top { margin-top: 0!important; }
-    .padding_bottom_20px { padding-bottom: 20px!important; }
-    .padding_bottom_40px { padding-bottom: 40px!important; }
-    .align_left { float: left!important; }
-    .align_right { float: right!important; }
-    .text_left { text-align: left; }
-    .text_right { text-align: right; }
-    .text_center { text-align: center; }
-    .no_pad { padding: 0!important; }
-    .clear { width: 97%; height: 1px; clear: both; }
-    .fatlink { font-weight: bold; color: #0099cc!important; text-decoration: none; }
-    .blue { color: #1a1f29; }
-    .light { color: #ccc; }
-    .up { text-transform: uppercase; }
-    .upsize { font-size: 20px; }
-
     /* NAV */
     .navbar-inverse .brand, .navbar-inverse .nav > li > a { color: #fff; text-transform: uppercase; font-size: 18px; font-family: 'Oswald',sans-serif; }
     .navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover, .navbar-inverse .brand:focus, .navbar-inverse .nav > li > a:focus { color: #fed43c; }
