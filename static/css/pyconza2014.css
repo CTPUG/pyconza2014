@@ -68,7 +68,11 @@ body {
 }
 
 #main section p {
-    padding: 0.5em 24px;
+    padding-left: 12px;
+}
+
+#main li p {
+    padding-left: 0;
 }
 
 #main table {
