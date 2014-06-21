@@ -1,8 +1,8 @@
 html, body {
 }
 
-body { 
-	font-size: 16px; 
+body {
+	font-size: 16px;
 }
 
 #wrap {
@@ -135,10 +135,10 @@ a:hover, a:focus { color: #cc6714; }
     .upsize { font-size: 20px; }
 
     /* NAV */
-    .navbar-inverse .brand, .navbar-inverse .nav > li > a { color: #fff; text-transform: uppercase; font-size: 18px; font-family: 'Oswald',sans-serif; }
-    .navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover, .navbar-inverse .brand:focus, .navbar-inverse .nav > li > a:focus { color: #fed43c; }
+    .navbar-inverse .navbar-brand, .navbar-inverse .nav > li > a { color: #fff; text-transform: uppercase; font-size: 18px; font-family: 'Oswald',sans-serif; }
+    .navbar-inverse .navbar-brand:hover, .navbar-inverse .nav > li > a:hover, .navbar-inverse .navbar-brand:focus, .navbar-inverse .nav > li > a:focus { color: #fed43c; }
     .navbar .nav > li > a { padding: 10px 13px; }
-    .navbar .brand { padding: 10px 15px; }
+    .navbar .navbar-brand { padding: 10px 15px; }
     .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret { display: none; }
     .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a { color: #181f29; background-color: #fed43c; background-image: linear-gradient(to bottom, #fed43c, #fed43c); }
 
@@ -233,17 +233,17 @@ a:hover, a:focus { color: #cc6714; }
         table td.unavailable { background: #444444; font-family: 'Oswald', sans-serif; font-size: 16px; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
         table th { background: #fed43c; color: #181f29; font-weight: normal; vertical-align: top; }
         table th span { font-family: 'Oswald', sans-serif; font-size: 16px; font-weight: bold; color: #1a1f29; text-transform: uppercase; line-height: 26px; }
-        
+
     /* REGISTRATION PAGES */
     .container-fluid { padding-top: 14px; padding-right: 0; padding-left: 0; color: #666666; background: url("../img/jagged_wide_top.png") no-repeat; }
     .row-fluid { width: 920px; padding: 0 10px 10px; background: #fff; }
     .container-fluid .row-fluid h2 { margin: 0 0 10px; padding: 0 24px; color: #fed43c; font-family: 'Londrina Solid',cursive; font-size: 30px; font-weight: normal; line-height: 47px; text-transform: uppercase; background: none repeat scroll 0 0 #1A1F29; }
-    .container-fluid .row-fluid .span6 p { margin: 10px 0; } 
+    .container-fluid .row-fluid .span6 p { margin: 10px 0; }
     form { margin: 0 0 20px; padding: 10px; color: #666; background: #fff; }
-    
 
-    
-    
-    
-    
+
+
+
+
+
 
