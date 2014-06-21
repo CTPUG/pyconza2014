@@ -15,6 +15,7 @@ body {
 
 #main {
   color: white;
+  padding-top: 1em;
 }
 
 #main .popover-content, #main .popover-title {
