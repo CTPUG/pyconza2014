@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>{{ WAFER_CONFERENCE_NAME }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="{{ STATIC_URL }}css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="{{ STATIC_URL }}css/wafer.css" rel="stylesheet" media="screen">
     <link href="{{ STATIC_URL }}css/pyconza2014.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}css/custom.css" rel="stylesheet" media="screen">
     <link href="{{ STATIC_URL }}img/favicon.ico" rel="shortcut icon">
     <link href="//fonts.googleapis.com/css?family=Londrina+Solid|Pacifico|Oswald|PT+Sans" rel="stylesheet" type="text/css">
     {% block extra_head %}{% endblock %}
@@ -31,10 +32,10 @@
     <div id="footer">
         <a href="https://github.com/CTPUG/pyconza2014">Pull requests</a> welcome.
     </div>
-    <script src="{{ STATIC_URL }}/js/jquery-1.9.1.min.js"></script>
-    <script src="{{ STATIC_URL }}/js/bootstrap.min.js"></script>
-    <script src="{{ STATIC_URL }}/js/jquery.anythingslider.min.js"></script>
-    <script src="{{ STATIC_URL }}/js/script.js?v=1"></script>
+    <script src="{{ STATIC_URL }}jquery/dist/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery.anythingslider.min.js"></script>
+    <script src="{{ STATIC_URL }}js/script.js?v=1"></script>
     {% block extra_foot %}{% endblock %}
 </body>
 </html>

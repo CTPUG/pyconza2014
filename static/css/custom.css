@@ -1,0 +1,11 @@
+.container-fluid{
+    padding-top: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.pull-right {
+    margin: 0;
+}

@@ -15,6 +15,7 @@ pyconzadir = os.path.dirname(__file__)
 
 STATICFILES_DIRS = (
     os.path.join(pyconzadir, 'static'),
+    os.path.join(pyconzadir, 'bower_components'),
 )
 
 TEMPLATE_DIRS = (
@@ -52,5 +53,5 @@ WAFER_MENUS += (
 )
 
 
-CRISPY_TEMPLATE_PACK = 'bootstrap'
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': False})
