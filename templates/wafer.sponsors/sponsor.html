@@ -1,11 +1,9 @@
 {% extends "wafer/base.html" %}
 {% block content %}
 <div class="content wide sponsor-detail">
-    <div class="body">
+    <section>
         <h1>{{ object.name }}</h1>
-		<div class="inner">
-          {{ object.description.rendered|safe }}
-		</div>
-    </div>
+        {{ object.description.rendered|safe }}
+    </section>
 </div>
 {% endblock %}
