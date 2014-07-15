@@ -54,6 +54,10 @@ body {
     background: white;
 }
 
+#main section section {
+    background: #eee;
+}
+
 #main section h1, #main section section h2 {
     margin: 10px 0 0;
     padding: 0 24px;
