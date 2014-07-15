@@ -32,6 +32,13 @@ body {
   color: black;
 }
 
+#main .well:after {
+  /* ensure wells contain all their floating content */
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #main h1 {
     margin: 0;
     padding: 0 24px;
