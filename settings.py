@@ -33,6 +33,8 @@ WAFER_MENUS += (
      "items": [
          {"name": "praekelt", "label": _(u"» Praekelt ★"),
           "url": reverse_lazy("wafer_sponsor", args=(2,))},
+         {"name": "google", "label": _(u"» Google ★"),
+          "url": reverse_lazy("wafer_sponsor", args=(3,))},
          {"name": "amazon", "label": _(u"» Amazon ★"),
           "url": reverse_lazy("wafer_sponsor", args=(1,))},
          {"name": "sponsors", "label": _("Our sponsors"),
