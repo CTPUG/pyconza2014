@@ -61,6 +61,12 @@ WAFER_MENUS += (
     {"name": "twitter", "label": "Twitter",
      "image": "/static/img/twitter.png",
      "url": "https://twitter.com/pyconza"},
+    {"name": "googleplus", "label": "Google+",
+     "image": "/static/img/googleplus.png",
+     "url": "https://plus.google.com/u/0/events/cpnt1h6tf6m59k8i4uvhmrvguis"},
+    {"name": "facebook", "label": "Facebook",
+     "image": "/static/img/facebook.png",
+     "url": "https://www.facebook.com/events/1467196980209896/"},
 )
 
 
