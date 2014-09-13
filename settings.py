@@ -50,6 +50,10 @@ WAFER_MENUS += (
      "items": [
          {"name": "schedule", "label": _("Schedule"),
           "url": reverse_lazy("wafer_full_schedule")},
+         {"name": "schedule-next-up", "label": _("Next up"),
+          # Once conference has started use:
+          #  "url": reverse_lazy("wafer_current")},
+          "url": "/schedule/current/?day=2014-10-02&time=08:30"},
          {"name": "accepted-talks", "label": _("Accepted Talks"),
           "url": reverse_lazy("wafer_users_talks")},
      ]},
