@@ -76,7 +76,7 @@ def upload_video(v, **kw):
 
 def ia_access_tokens():
     """ Retrieve access token from environment. """
-    token = os.env.get("IAS3_TOKEN")
+    token = os.getenv("IAS3_TOKEN")
     if token is None:
         raise RuntimeError(
             "Please set 'export IAS3_TOKEN=\"<access-token>:<secret-key>\"'.")
