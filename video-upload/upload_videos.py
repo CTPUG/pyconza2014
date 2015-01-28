@@ -2,6 +2,7 @@
 
 import sys
 import os
+import optparse
 
 import yaml
 
@@ -85,12 +86,18 @@ def ia_access_tokens():
 
 def main(args):
     """ Run an upload. """
+    parser = optparse.OptionParser()
+    parser.add_option("-v", "--verbose", dest="verbose", action="store_true",
+                      default=False, help="Be more verbose during uploads")
+    options, args = parser.parse_args(args)
+
     conf = Config("videos.yaml")
     access_key, secret_key = ia_access_tokens()
     for v in conf.videos:
         if not v.upload:
             continue
-        upload_video(v, access_key=access_key, secret_key=secret_key)
+        upload_video(v, access_key=access_key, secret_key=secret_key,
+                     verbose=options.verbose)
 
 
 if __name__ == "__main__":
