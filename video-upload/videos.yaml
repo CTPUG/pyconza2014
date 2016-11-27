@@ -1,4 +1,4 @@
-folder: "<path-to-video-files>"
+folder: "/mnt/external/pyconza_2014_videos/"
 
 default_metadata:
     mediatype: "movies"
@@ -11,7 +11,7 @@ videos:
 # Closing
 
   - filename: "CLOSING.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-closing"
     metadata:
         title: "PyConZA 2014: Closing Remarks"
@@ -156,7 +156,7 @@ Lightning Talks will take place immediately before the keynote at the end of the
         date: "2014-10-02"
 
   - filename: "7 A The Earth is not Flat (and other Heresies)-.mp4"
-    upload: false
+    done: true 
     identifier: "pyconza2014-earth-is-not-flat"
     metadata:
         title: "The Earth is not Flat (and other Heresies)"
@@ -167,7 +167,7 @@ Lightning Talks will take place immediately before the keynote at the end of the
 # Day 2
 
   - filename: "8 What I learned about Python-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-python-ideas"
     metadata:
         title: "What I learned about Python – and about Guido's time machine – by reading the python-ideas mailing list"
@@ -178,7 +178,7 @@ A wonderful case study of this process is the innocuous seeming built-in 'sum()'
         date: "2014-10-03"
 
   - filename: "9 A An introduction to regular expressions in Python-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-regular-expressions"
     metadata:
         title: "An introduction to regular expressions in Python"
@@ -191,7 +191,7 @@ In this talk I aim to demystify regular expressions for the beginner programmer,
         date: "2014-10-03"
 
   - filename: "9 B Inspired by Lisp to get Ruby to talk Python-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-inspired-by-lisp"
     metadata:
         title: "Inspired by Lisp to get Ruby to talk Python"
@@ -204,10 +204,10 @@ This talk will be about how we managed to leverage the power of Python while ret
         date: "2014-10-03"
 
   - filename: "10 A journey through the eyes of a newbie female developer-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-journey-through-eyes-of-newbie-female-developer"
     metadata:
-        title: "A journey through the eyes of a newbie female developer" 
+        title: "A journey through the eyes of a newbie female developer"
         creator: "Ridhwana Khan"
         description: "Graduating from a 90% male computer science class, to an initially 100% male software development team, finally allowed me to realise that there is a dire lack of women in the computer science field.
 
@@ -238,7 +238,7 @@ We are proudly South African and most definitely should be known for our diversi
   #       date: "2014-10-03"
 
   - filename: "11 a Python in Debian & Ubuntu-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-python-in-debian"
     metadata:
         title: "Python in Debian & Ubuntu"
@@ -251,7 +251,7 @@ Debian recently gained a new Python packaging tool, pybuild. This finally makes 
         date: "2014-10-03"
 
   - filename: "11 B Monkeying around with Twisted-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-monkeying-with-twisted"
     metadata:
         title: "Monkeying around with Twisted"
@@ -264,7 +264,7 @@ Through this talk we will introduce Twisted as a viable option for programming n
         date: "2014-10-03"
 
   - filename: "12 A Python in the context of a Start-up-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-python-in-a-start-up"
     metadata:
         title: "Python in the context of a Start-up: The Good, The Bad and the Ugly"
@@ -279,7 +279,7 @@ My aim with this talk is to give the listener an idea of what kind of experience
         date: "2014-10-03"
 
   - filename: "12 b How Python helps writing documentation less painful-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-python-helps-make-writing-docs-less-painful"
     metadata:
         title: "How Python helps writing documentation less painful"
@@ -292,7 +292,7 @@ I'll focus on not only using Sphinx as a tool, but also on how to structure your
         date: "2014-10-03"
 
   - filename: "13 a Challenges and Prospects of the Python-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-python-african-csae-tour"
     metadata:
         title: "Challenges and Prospects of the Python African Computational Science and Engineering Tour Project"
@@ -303,7 +303,7 @@ Python's unique features and the possibility that any user connected to the inte
         date: "2014-10-03"
 
   - filename: "13 B Practical testing-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-practical-testing"
     metadata:
         title: "Practical testing"
@@ -324,7 +324,7 @@ This talk will cover some of the practical aspects of writing good tests for rea
         date: "2014-10-03"
 
   - filename: "14 A Reaching Beyond the Web-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-reaching-beyond-the-web"
     metadata:
         title: "Reaching Beyond the Web"
@@ -339,7 +339,7 @@ If you truly want your tools to reach everyone, adding SMS connectivity will spr
         date: "2014-10-03"
 
   - filename: "14 b How I Became A Cookie Monster-.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-cookie-monster"
     metadata:
         title: "How I Became A Cookie Monster"
@@ -352,7 +352,7 @@ My talk aims to introduce cookiecutter to a wider audience (if you're at a PyCon
         date: "2014-10-03"
 
   - filename: "15 Python at the Observatory -.mp4"
-    upload: false
+    done: true
     identifier: "pyconza2014-python-at-the-observatory"
     metadata:
         title: "Python at the Observatory - Old telescopes, new instruments"
